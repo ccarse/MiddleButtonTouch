@@ -1,0 +1,12 @@
+{
+  "name": "MiddleMouseTouchScrolling",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Enables macbook trackpad (or ios) style scrolling on mac when holding the middle mouse button.",
+  "content_scripts": [ {
+      "js": [ "scroll.js" ],
+      "matches": [ "http://*/*", "https://*/*", "file:///*/*" ],
+      "run_at": "document_start"
+   } ],
+   "permissions": [ "tabs" ]
+}
